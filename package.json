@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/leismore/emoji_messenger.git" },
+  "homepage": "https://github.com/leismore/emoji_messenger#readme",
+  "bugs": { "url": "https://github.com/leismore/emoji_messenger/issues" },
+  "author": { "name": "Kyle Chine", "url": "https://www.kylechine.name", "email": "me@kylechine.name" },
   "dependencies": {
     "@material-ui/core": "^4.9.10",
     "@material-ui/icons": "^4.9.1",
