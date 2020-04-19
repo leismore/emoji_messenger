@@ -3,10 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
-  "repository": { "type": "git", "url": "https://github.com/leismore/emoji_messenger.git" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leismore/emoji_messenger.git"
+  },
   "homepage": "https://github.com/leismore/emoji_messenger#readme",
-  "bugs": { "url": "https://github.com/leismore/emoji_messenger/issues" },
-  "author": { "name": "Kyle Chine", "url": "https://www.kylechine.name", "email": "me@kylechine.name" },
+  "bugs": {
+    "url": "https://github.com/leismore/emoji_messenger/issues"
+  },
+  "author": {
+    "name": "Kyle Chine",
+    "url": "https://www.kylechine.name",
+    "email": "me@kylechine.name"
+  },
   "dependencies": {
     "@material-ui/core": "^4.9.10",
     "@material-ui/icons": "^4.9.1",
@@ -17,6 +26,7 @@
     "@types/node": "^12.12.36",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.6",
+    "langtag-utils": "^2.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",

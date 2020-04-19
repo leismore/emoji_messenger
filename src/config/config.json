@@ -1,0 +1,52 @@
+{
+  "app":
+  {
+    "url":    "https://emoji-messenger.leismore.co",
+    "email":  "emoji-messenger@leismore.co",
+    "github": "https://github.com/leismore/emoji_messenger",
+    "date": {
+      "initYear":    "2020",
+      "updatedYear": "2020"
+    }
+  },
+
+  "leismore":
+  {
+    "url": "https://www.leismore.co"
+  },
+
+  "license":
+  {
+    "url": "https://emoji-messenger.leismore.co/LICENSE.txt"
+  },
+
+  "supportedLangs": [
+    {
+      "lang":   "en",
+      "region": "US"
+    }
+  ],
+
+  "text":
+  {
+    "minLength":     1,
+    "maxLength":     9216,
+    "minLines":      8
+  },
+
+  "password":
+  {
+    "minLength":     8,
+    "maxLength":     2048
+  },
+
+  "messengerClipboard":
+  {
+    "duration":      5
+  },
+
+  "donation":
+  {
+    "url": "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=SPPJPYRY4D6WC&item_name=Give+people+an+option+to+support+my+open+source+software.&currency_code=AUD&source=url"
+  }
+}
