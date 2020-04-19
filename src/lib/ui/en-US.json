@@ -1,0 +1,67 @@
+{
+  "app": {
+    "name":   "Emoji Messenger",
+    "slogan": "Encrypt your messages and share them safely within any untrustworthy environment."
+  },
+
+  "form":
+  {
+    "text":
+    {
+      "label":       "Message",
+      "help":        "Max. 9216 characters",
+      "placeholder": "Encrypt your messages and share them safely within any untrustworthy environment."
+    },
+
+    "password":
+    {
+      "label": "Password",
+      "help":  "Min. 8 / Max. 2048 characters"
+    },
+
+    "checkboxAppendURL":
+    {
+      "label": "Append the decryption URL"
+    },
+
+    "messengerClipboard":
+    {
+      "message": "Copied to Clipboard."
+    },
+
+    "button":
+    {
+      "encrypt":
+      {
+        "label": "Encrypt"
+      },
+
+      "decrypt":
+      {
+        "label": "Decrypt"
+      },
+
+      "toClipboard":
+      {
+        "label": "Copy to Clipboard"
+      },
+
+      "fromClipboard":
+      {
+        "label": "Copy from Clipboard"
+      }
+    }
+  },
+
+  "donation": {
+    "label": "Donate"
+  },
+
+  "leismore": {
+    "name": "Leismore"
+  },
+
+  "license": {
+    "name": "MIT License"
+  }
+}
