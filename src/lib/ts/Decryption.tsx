@@ -2,9 +2,12 @@
  * Data for Decryption
  */
 
-import SimpleCrypto from "simple-crypto-js";
-import config       from '../../config/config.json';
-import EMError      from './EMError';
+import SimpleCrypto       from "simple-crypto-js";
+import config             from '../../config/config.json';
+import EMError            from './EMError';
+import emoji2char         from './emoji2char';
+import { PlainText }      from '@leismore/plaintext';
+import remove_appendedURL from './remove_appendedURL';
 
 class Decryption
 {
@@ -18,6 +21,23 @@ class Decryption
    */
   constructor(text:string, password:string)
   {
+    try
+    {
+      let unified = PlainText.removeLB(text, '');
+      if (unified === null)
+        { text = ''; }
+      else
+        { text = unified; }
+
+      text = text.trim();
+      text = remove_appendedURL(text);
+      text = text.trim();
+    }
+    catch(e)
+    {
+      throw new EMError('Decryption: invalid text', '3', e);
+    }
+
     if (typeof text !== 'string' ||
        (text.length < config.text.minLength || text.length > config.text.maxLength))
     {
@@ -40,7 +60,7 @@ class Decryption
   decrypt():string
   {
     let sc = new SimpleCrypto(this.password);
-    let decrypted = String( sc.decrypt(this.text) );
+    let decrypted = String( sc.decrypt( emoji2char(this.text) ) );
     if (decrypted.length === 0)
     {
       throw new EMError('Decryption: invalid password', '4');

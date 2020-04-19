@@ -30,7 +30,7 @@ class Encryption
     }
     catch(e)
     {
-      throw new EMError('Encryption: invalid text', '1');
+      throw new EMError('Encryption: invalid text', '1', e);
     }
 
     if (typeof text !== 'string' ||
