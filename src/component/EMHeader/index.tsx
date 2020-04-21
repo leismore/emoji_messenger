@@ -1,17 +1,16 @@
 import React         from 'react';
 import style         from './index.module.css';
-import lang          from '../../lib/ts/get_lang';
 import get_ui        from '../../lib/ts/get_ui';
 import { Container, Typography } from '@material-ui/core';
 import logo          from '../../logo.svg';
+import { Props }     from './type';
 
-// @ts-ignore
-const ui = get_ui(lang);
-
-class EMHeader extends React.Component
+class EMHeader extends React.Component<Props>
 {
     render():React.ReactNode
     {
+      const ui = get_ui(this.props.lang);
+
       return (
         <Container className={style.container} component="header" maxWidth="md">
            <img className={style.logo} src={logo} alt={ui.app.name} />
