@@ -7,7 +7,7 @@ import config                         from '../../config/config.json';
 
 let supported = [];
 for (const k in config.supportedLangs)
-  { supported.push( config.supportedLangs[k].lang.toLowerCase() + 
+  { supported.push( config.supportedLangs[k].lang.toLowerCase() + '-' +
                     config.supportedLangs[k].region.toUpperCase() ); }
 
 let lang = lookup(supported, navigatorLanguages(), supported[0]);

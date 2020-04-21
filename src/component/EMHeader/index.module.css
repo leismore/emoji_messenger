@@ -1,0 +1,12 @@
+.container
+{
+  padding: 1ex;
+  text-align: center;
+}
+
+.logo
+{
+  display: inline;
+  vertical-align: middle;
+  margin-right: 2ex;
+}
