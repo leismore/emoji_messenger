@@ -1,13 +1,12 @@
 {
   "name": "emoji_messenger",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/leismore/emoji_messenger.git"
   },
-  "homepage": "https://github.com/leismore/emoji_messenger#readme",
   "bugs": {
     "url": "https://github.com/leismore/emoji_messenger/issues"
   },
