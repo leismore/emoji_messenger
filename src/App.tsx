@@ -6,6 +6,7 @@ import './App.css';
 import get_lang from './lib/ts/get_lang';
 
 import EMHeader from './component/EMHeader/index';
+import EMFooter from './component/EMFooter/index';
 
 const LANG = get_lang();
 
@@ -21,6 +22,7 @@ function App() {
       <CssBaseline />
       <ThemeProvider theme={theme}>
         <EMHeader lang={LANG} />
+        <EMFooter lang={LANG} />
       </ThemeProvider>
     </React.Fragment>
   );

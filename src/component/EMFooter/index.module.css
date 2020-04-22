@@ -1,0 +1,25 @@
+.container
+{
+  padding: 2em;
+  text-align: center;
+  background-color: #212121;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem grey;
+  margin: 1rem;
+}
+
+.link:link, .link:visited
+{
+  text-decoration: none;
+  color: #bdbdbd;
+}
+
+.containerLogoLeismore
+{
+  margin: 1ex;
+}
+
+.logoLeismore
+{
+  height: 1em;
+}
