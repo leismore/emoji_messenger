@@ -34,7 +34,7 @@ class EMFooter extends React.Component<Props>
       return (
         <ThemeProvider theme={theme}>
           <Container className={style.container} component="footer" maxWidth="md">
-           <Grid container alignContent="space-around" alignItems="center" justify="space-evenly" spacing={3}>
+           <Grid container justify="space-evenly" spacing={3}>
             <Grid item xs={12} sm={2}>
               <Button href={config.donation.url} variant="contained" color="primary">{ui.donation.label}</Button>
             </Grid>
