@@ -3,7 +3,8 @@ import style         from './index.module.css';
 import { Props }     from './type';
 import { Container, Box, Grid, Button, Typography } from '@material-ui/core';
 import { ThemeProvider, createMuiTheme }            from '@material-ui/core/styles';
-import { grey }      from '@material-ui/core/colors';
+import { grey, deepOrange }                         from '@material-ui/core/colors';
+import DonationIcon  from '@material-ui/icons/FavoriteBorderOutlined';
 import GitHubIcon    from '@material-ui/icons/GitHub';
 import get_ui        from '../../lib/ts/get_ui';
 import config        from '../../config/config.json';
@@ -11,6 +12,9 @@ import logo_leismore from '../../lib/image/logo_leismore.svg';
 
 const theme = createMuiTheme({
   palette: {
+    primary: {
+      main:      deepOrange['A400']
+    },
     secondary:
     {
       main:      grey['500']
@@ -36,7 +40,8 @@ class EMFooter extends React.Component<Props>
           <Container className={style.container} component="footer" maxWidth="md">
            <Grid container justify="space-evenly" spacing={3}>
             <Grid item xs={12} sm={2}>
-              <Button href={config.donation.url} variant="contained" color="primary">{ui.donation.label}</Button>
+              <Button href={config.donation.url} variant="contained" color="primary" startIcon={<DonationIcon />}>
+                {ui.donation.label}</Button>
             </Grid>
             <Grid item xs={12} sm={6}>
               <Typography color="textPrimary" noWrap={true}>

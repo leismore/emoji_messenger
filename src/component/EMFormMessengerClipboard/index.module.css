@@ -1,0 +1,19 @@
+.container, .containerHidden
+{
+  padding:           1ex;
+  text-align:        center;
+  background-color:#424242;
+  border-radius:     0.5rem;
+  box-shadow:        0 0 0.5rem #00c853;
+  margin-top:        0.2rem;
+  margin-bottom:     0.2rem;
+}
+.containerHidden
+{
+  visibility: hidden;
+}
+.icon
+{
+  margin-right:   0.5ex;
+  vertical-align: middle;
+}

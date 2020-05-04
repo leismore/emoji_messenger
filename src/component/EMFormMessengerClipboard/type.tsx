@@ -1,5 +1,6 @@
 import SupportedLangs from '../../lib/ts/type/SupportedLangs';
 
 export type Props = {
-    lang: SupportedLangs
+    lang:          SupportedLangs,
+    visible:       boolean
 };

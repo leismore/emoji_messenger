@@ -1,0 +1,35 @@
+.container
+{
+  margin-top:    0.5ex;
+  margin-bottom: 0.5ex;
+  width:         100%;
+}
+
+.label
+{
+    margin-bottom: 1ex;
+    color: white !important;
+}
+
+.pwNormal, .pwValid, .pwInvalid
+{
+    width: 100%;
+    border-color: #424242;
+    border-radius: 1ex;
+}
+
+.pwInvalid
+{
+    box-shadow: 0 0 1ex #d50000;
+}
+
+.helperNormal, .helperValid, .helperInvalid
+{
+    text-align: right   !important;
+    color:    #ff5252 !important;
+}
+
+.helperNormal, .helperValid
+{
+    visibility: hidden;
+}

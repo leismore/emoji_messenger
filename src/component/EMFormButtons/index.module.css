@@ -1,0 +1,15 @@
+.container
+{
+    margin-top:    0.5ex;
+    margin-bottom: 0.5ex;
+}
+
+.buttonGroup1, .buttonGroup2
+{
+    display: flex !important;
+}
+
+.buttonGroup1 button, .buttonGroup2 button
+{
+    margin: 1ex !important;
+}
