@@ -1,6 +1,6 @@
 {
   "name": "emoji_messenger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "license": "MIT",
   "repository": {
@@ -30,7 +30,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "simple-crypto-js": "^2.2.0",
+    "simple-crypto-js": "^3.0.0",
     "typeface-roboto": "0.0.75",
     "typescript": "^3.7.5"
   },
